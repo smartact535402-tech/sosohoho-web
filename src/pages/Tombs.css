@@ -1,0 +1,83 @@
+.tombs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.tomb-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tomb-block:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.tomb-block:nth-child(even) .tomb-image {
+  order: 2;
+}
+
+.tomb-block:nth-child(even) .tomb-content {
+  order: 1;
+}
+
+.tomb-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.tomb-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tomb-image:hover img {
+  transform: scale(1.03);
+}
+
+.tomb-content {
+  padding: 20px;
+}
+
+.tomb-title {
+  font-size: 2.2rem;
+  color: var(--color-navy);
+  margin-bottom: 20px;
+}
+
+.tomb-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.tomb-highlight {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  .tomb-block, .tomb-block:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  
+  .tomb-block:nth-child(even) .tomb-image,
+  .tomb-block:nth-child(odd) .tomb-image {
+    order: 1;
+  }
+  
+  .tomb-block:nth-child(even) .tomb-content,
+  .tomb-block:nth-child(odd) .tomb-content {
+    order: 2;
+  }
+  
+  .tomb-image img {
+    height: 300px;
+  }
+}
