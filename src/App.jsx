@@ -6,6 +6,8 @@ import Palaces from './pages/Palaces';
 import Tombs from './pages/Tombs';
 import Museums from './pages/Museums';
 import Alleyways from './pages/Alleyways';
+import Booking from './pages/Booking';
+import Reviews from './pages/Reviews';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/tombs-shrine" element={<Tombs />} />
           <Route path="/museums" element={<Museums />} />
           <Route path="/alleyways" element={<Alleyways />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </Layout>
     </Router>

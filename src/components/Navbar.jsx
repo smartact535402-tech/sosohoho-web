@@ -45,6 +45,16 @@ const Navbar = () => {
               소소한 골목길
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/booking" className={`nav-links ${location.pathname === '/booking' ? 'active' : ''}`} onClick={closeMobileMenu}>
+              체험 신청
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/reviews" className={`nav-links ${location.pathname === '/reviews' ? 'active' : ''}`} onClick={closeMobileMenu}>
+              여행 후기
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
