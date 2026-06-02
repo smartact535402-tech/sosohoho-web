@@ -11,7 +11,7 @@ const Alleyways = () => {
         <div className="magazine-layout">
           <article className="magazine-article">
             <div className="magazine-img-wrapper">
-              <img src="/alleyway_thumbnail.png" alt="북촌 한옥마을" />
+              <img src="/alleyway_bukchon.png" alt="북촌 한옥마을" />
             </div>
             <div className="magazine-content">
               <div className="article-category">Seoul, Bukchon</div>
@@ -28,7 +28,7 @@ const Alleyways = () => {
           
           <article className="magazine-article">
             <div className="magazine-img-wrapper">
-              <img src="/alleyway_thumbnail.png" alt="서촌 마을" />
+              <img src="/alleyway_seochon.png" alt="서촌 마을" />
             </div>
             <div className="magazine-content">
               <div className="article-category">Seoul, Seochon</div>
@@ -39,6 +39,23 @@ const Alleyways = () => {
               <div className="course-box">
                 <div className="course-title">추천 산책 코스</div>
                 <div className="course-path">경복궁역 2번 출구 ➔ 통인시장 ➔ 수성동 계곡 ➔ 박노수 미술관 ➔ 대오서점</div>
+              </div>
+            </div>
+          </article>
+
+          <article className="magazine-article">
+            <div className="magazine-img-wrapper">
+              <img src="/alleyway_jeongdong.png" alt="정동길" />
+            </div>
+            <div className="magazine-content">
+              <div className="article-category">Seoul, Jeongdong</div>
+              <h3 className="article-title">덕수궁 돌담길 따라<br/>가을빛 흐르는 정동길</h3>
+              <p className="article-text">
+                덕수궁 돌담길을 따라 걷다 보면 만나는 정동길은 한국의 근대 역사와 현대의 아름다움이 조화롭게 어우러진 길입니다. 붉은 벽돌의 정동제일교회와 이국적인 옛 근대 건축물들이 늘어서 있고, 가을이면 노랗게 물든 은행나무 잎이 낭만적인 풍경을 자아냅니다. 도심 속 고요함과 고풍스러운 낭만을 느끼며 차분하게 사색하기에 더없이 좋은 산책로입니다.
+              </p>
+              <div className="course-box">
+                <div className="course-title">추천 산책 코스</div>
+                <div className="course-path">시청역 1번 출구 ➔ 덕수궁 돌담길 ➔ 서울시립미술관 ➔ 정동제일교회 ➔ 정동극장 ➔ 중명전</div>
               </div>
             </div>
           </article>
