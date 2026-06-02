@@ -7,7 +7,7 @@ const palacesData = [
     name: '경복궁',
     desc: '조선 왕조의 법궁으로, 5대 궁궐 중 가장 규모가 크고 웅장합니다. 웅장한 근정전과 경회루의 사계절 풍경이 일품입니다.',
     point: '추천 명소: 경회루, 향원정',
-    image: '/palace_gyeongbokgung.png'
+    image: '/palace_gyeongbokgung.jpg'
   },
   {
     id: 2,
