@@ -6,12 +6,11 @@ const Home = () => {
   return (
     <>
       <section className="hero-section">
-        <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title">sosohoho</h1>
-          <p className="hero-subtitle">소소한 발걸음, 호젓한 기억</p>
-          <Link to="/palaces" className="btn">우리 궁궐 거닐기</Link>
+          <h1 className="hero-title">우리 궁궐 거닐기</h1>
+          <p className="hero-subtitle">가장 호젓하고 아름다운 고궁의 순간들</p>
         </div>
+        <Link to="/palaces" className="hero-link-overlay" aria-label="우리 궁궐 거닐기"></Link>
       </section>
 
       <section className="section concept-section">
