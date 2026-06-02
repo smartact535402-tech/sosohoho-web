@@ -1,3 +1,55 @@
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 24px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-ivory-dark);
+  color: var(--color-text-main);
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-btn:hover {
+  background-color: var(--color-ivory-dark);
+  border-color: var(--color-accent);
+  color: var(--color-navy);
+  transform: translateY(-1px);
+}
+
+.tab-btn.active {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(27, 38, 59, 0.15);
+}
+
+/* Fade in animation for cards */
+.museum-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .museum-list {
   display: flex;
   flex-direction: column;
