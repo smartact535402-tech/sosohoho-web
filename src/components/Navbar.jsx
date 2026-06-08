@@ -14,6 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
+          <img src="/favicon.svg" alt="sosohoho" className="logo-img" />
           sosohoho
         </Link>
         <div className="menu-icon" onClick={handleClick}>
