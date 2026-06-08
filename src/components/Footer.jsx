@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-logo">sosohoho</div>
         <p className="footer-text">
-          소소한 발걸음, 호젓한 기억.<br/>
+          소소한 일상, 호젓한 기억.<br/>
           우리의 아름다운 전통 역사문화 유산과 정겨운 동네 골목길을 소개합니다.
         </p>
         <div className="footer-links">
