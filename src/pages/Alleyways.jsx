@@ -1,4 +1,3 @@
-import React from 'react';
 import './Alleyways.css';
 
 const Alleyways = () => {
@@ -11,7 +10,7 @@ const Alleyways = () => {
         <div className="magazine-layout">
           <article className="magazine-article">
             <div className="magazine-img-wrapper">
-              <img src="/alleyway_bukchon.png" alt="북촌 한옥마을" />
+              <img src="/alleyway_bukchon.jpg" alt="북촌 한옥마을" />
             </div>
             <div className="magazine-content">
               <div className="article-category">Seoul, Bukchon</div>
@@ -28,7 +27,7 @@ const Alleyways = () => {
           
           <article className="magazine-article">
             <div className="magazine-img-wrapper">
-              <img src="/alleyway_seochon.png" alt="서촌 마을" />
+              <img src="/alleyway_seochon.jpg" alt="서촌 마을" />
             </div>
             <div className="magazine-content">
               <div className="article-category">Seoul, Seochon</div>
@@ -45,7 +44,7 @@ const Alleyways = () => {
 
           <article className="magazine-article">
             <div className="magazine-img-wrapper">
-              <img src="/alleyway_jeongdong.png" alt="정동길" />
+              <img src="/alleyway_jeongdong.jpg" alt="정동길" />
             </div>
             <div className="magazine-content">
               <div className="article-category">Seoul, Jeongdong</div>

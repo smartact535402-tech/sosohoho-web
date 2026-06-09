@@ -28,7 +28,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/palaces" className={`nav-links ${location.pathname === '/palaces' ? 'active' : ''}`} onClick={closeMobileMenu}>
-              우리나라 5대 궁궐
+              궁궐 & 수원화성
             </Link>
           </li>
           <li className="nav-item">

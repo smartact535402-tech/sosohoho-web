@@ -9,8 +9,8 @@ const Home = () => {
         <div className="hero-content">
           <h1 className="hero-title">소소한 일상, 호젓한 기억</h1>
           <p className="hero-subtitle">가장 호젓하고 아름다운 순간들을 거닐다</p>
+          <Link to="/palaces" className="btn-hero">우리 궁궐 거닐기</Link>
         </div>
-        <Link to="/palaces" className="hero-link-overlay" aria-label="우리 궁궐 거닐기"></Link>
       </section>
 
       <section className="section concept-section">

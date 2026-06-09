@@ -6,13 +6,16 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-container">
-        <div className="footer-logo">sosohoho</div>
+        <Link to="/" className="footer-logo">
+          <img src="/favicon.svg" alt="sosohoho" className="footer-logo-img" />
+          sosohoho
+        </Link>
         <p className="footer-text">
           소소한 일상, 호젓한 기억.<br/>
           우리의 아름다운 전통 역사문화 유산과 정겨운 동네 골목길을 소개합니다.
         </p>
         <div className="footer-links">
-          <Link to="/palaces">5대 궁궐</Link>
+          <Link to="/palaces">궁궐 & 수원화성</Link>
           <Link to="/tombs-shrine">왕릉 & 종묘</Link>
           <Link to="/museums">박물관 안내</Link>
           <Link to="/alleyways">소소한 골목길</Link>

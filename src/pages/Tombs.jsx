@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Tombs.css';
 
 const representativeTombs = [
@@ -138,7 +138,7 @@ const Tombs = () => {
           <div className="tombs-section fade-in">
             <div className="tomb-block">
               <div className="tomb-image">
-                <img src="/joseon_tomb_banner.png" alt="조선왕릉" />
+                <img src="/joseon_tomb_banner.jpg" alt="조선왕릉" />
               </div>
               <div className="tomb-content">
                 <h3 className="tomb-title">조선왕릉</h3>
@@ -151,13 +151,14 @@ const Tombs = () => {
             
             <div className="tomb-block">
               <div className="tomb-image">
-                <img src="/jongmyo_shrine_banner.png" alt="종묘" />
+                <img src="/jongmyo_shrine_banner.jpg" alt="종묘" />
               </div>
               <div className="tomb-content">
                 <h3 className="tomb-title">종묘</h3>
                 <p className="tomb-desc">
-                  종묘는 조선 왕조의 역대 왕과 왕비, 그리고 추존된 왕과 왕비의 신주를 모신 유교 사당입니다. 가장 정제되고 장엄한 한국의 전통 건축물로 평가받고 있습니다.<br/><br/>
-                  끝없이 이어지는 듯한 정전의 긴 지붕선과 기둥들이 만들어내는 <span className="tomb-highlight">규칙적이면서도 장엄한 절제미</span>는 보는 이로 하여금 깊은 경건함을 자아냅니다.
+                  종묘는 조선 왕조의 역대 왕과 왕비, 그리고 사후에 추존된 왕과 왕비의 신주(위패)를 모시고 제사를 지내는 유교 사당입니다. 그 역사적 가치와 뛰어난 건축미를 인정받아 1995년 유네스코 세계문화유산으로 지정되었습니다.<br/><br/>
+                  종묘의 핵심 공간인 <strong>정전(국보)</strong>은 무려 19칸에 달하는 세계에서 가장 긴 단일 목조 건축물 중 하나로, 거대한 스케일에도 불구하고 극도의 절제미를 보여줍니다. 단청을 칠하지 않은 붉은 기둥과 거친 박석(돌바닥), 묵직한 지붕선이 연출하는 공간감은 영혼들이 머무는 숭고하고 경건한 분위기를 자아냅니다. 옆에 위치한 <strong>영녕전(보물)</strong>은 정전의 규모가 부족해지자 새로 지은 별묘로, 조금 더 아늑하고 정겨운 건축 양식을 띄고 있습니다.<br/><br/>
+                  건축물 자체뿐만 아니라, 이곳에서 거행되는 <strong>종묘제례와 종묘제례악</strong>은 조선 시대 국가 제사 의식을 고스란히 계승하여 지금까지 매년 전통 방식 그대로 재현되고 있으며, 유네스코 인류무형문화유산으로도 등재되어 있습니다. 이처럼 건축과 무형의 의례가 하나로 어우러진 종묘는 동양 전통 문화의 살아있는 정수입니다.
                 </p>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Museums.css';
 
 const museumsData = [
@@ -11,7 +11,7 @@ const museumsData = [
     hours: '10:00 - 18:00 (수/토요일 21:00까지)',
     location: '서울 용산구 서빙고로 137',
     exhibition: '선사·고대관, 중·근세관, 서화관, 조각·공예관',
-    image: '/museum_central.png'
+    image: '/museum_central.jpg'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const museumsData = [
     hours: '10:00 - 18:00 (수/토요일 21:00까지)',
     location: '서울 종로구 효자로 12',
     exhibition: '조선 국왕, 조선 궁궐, 왕실 생활관, 대한제국관',
-    image: '/museum_palace.png'
+    image: '/museum_palace.jpg'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (시즌별 변동)',
     location: '서울 종로구 삼청로 37',
     exhibition: '한국인의 하루, 한국인의 일상, 한국인의 일생',
-    image: '/museum_folk.png'
+    image: '/museum_folk.jpg'
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const museumsData = [
     hours: '10:00 - 18:00 (토요일 21:00까지)',
     location: '서울 용산구 서빙고로 139',
     exhibition: '한글의 역사, 한글과 한문, 어린이 한글 놀이터',
-    image: '/museum_hangeul.png'
+    image: '/museum_hangeul.jpg'
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const museumsData = [
     hours: '10:00 - 18:00 (수/토요일 21:00까지)',
     location: '서울 종로구 세종대로 198',
     exhibition: '대한민국의 태동, 대한민국의 기초 확립, 대한민국의 성장과 발전',
-    image: '/museum_history.png'
+    image: '/museum_history.jpg'
   },
   // 영남권
   {
@@ -62,7 +62,7 @@ const museumsData = [
     hours: '10:00 - 18:00 (토요일/공휴일 19:00까지)',
     location: '경북 경주시 일정로 186',
     exhibition: '신라역사관, 신라미술관, 월지관, 옥외 전시 (성덕대왕신종)',
-    image: '/museum_gyeongju.png'
+    image: '/museum_gyeongju.jpg'
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '대구 수성구 청호로 321',
     exhibition: '고고실, 미술실, 복식문화실, 아롱다롱방',
-    image: '/museum_daegu.png'
+    image: '/museum_daegu.jpg'
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '경남 김해시 가야의길 190',
     exhibition: '가야로 가는 길, 가야와 가야 사람들, 철의 왕국 가야',
-    image: '/museum_gimhae.png'
+    image: '/museum_gimhae.jpg'
   },
   {
     id: 9,
@@ -92,7 +92,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '경남 진주시 남강로 626-35 (진주성 내)',
     exhibition: '임진왜란실, 두암관(기증 문화재), 역사문화홀',
-    image: '/museum_jinju.png'
+    image: '/museum_jinju.jpg'
   },
   // 호남/충청/기타
   {
@@ -113,7 +113,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '충남 공주시 관광단지길 34',
     exhibition: '웅진백제실, 충청남도 역사문화실, 야외 정원',
-    image: '/museum_gongju.png'
+    image: '/museum_gongju.jpg'
   },
   {
     id: 12,
@@ -123,7 +123,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '전북 익산시 금마면 미륵사지로 362',
     exhibition: '익산 백제, 미륵사지실, 백제 역사유적지구관',
-    image: '/museum_iksan.png'
+    image: '/museum_iksan.jpg'
   },
   {
     id: 13,
@@ -133,7 +133,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '광주 북구 하서로 110',
     exhibition: '아시아도자문화실, 역사문화실, 신안해저문화재 전시',
-    image: '/museum_gwangju.png'
+    image: '/museum_gwangju.jpg'
   },
   {
     id: 14,
@@ -143,7 +143,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '전북 전주시 완산구 천잠로 387',
     exhibition: '전라북도 역사실, 미술실, 조선 선비 문화관',
-    image: '/museum_jeonju.png'
+    image: '/museum_jeonju.jpg'
   },
   {
     id: 15,
@@ -153,7 +153,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '제주 제주시 일주동로 17',
     exhibition: '제주 탐라 역사실, 기획전시실, 해양문화재 전시실',
-    image: '/museum_jeju.png'
+    image: '/museum_jeju.jpg'
   },
   {
     id: 16,
@@ -163,7 +163,7 @@ const museumsData = [
     hours: '09:00 - 18:00 (월요일 휴관)',
     location: '강원 춘천시 우석로 70',
     exhibition: '강원의 고대, 강원의 중근세, 오백나한 특별관, 실감영상관',
-    image: '/museum_chuncheon.png'
+    image: '/museum_chuncheon.jpg'
   }
 ];
 

@@ -585,3 +585,58 @@
     gap: 8px;
   }
 }
+
+/* Palace Route Layout CSS */
+.palace-route-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.palace-route-map-box {
+  background-color: var(--color-white);
+  border: 1px solid rgba(27, 38, 59, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.palace-route-map-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.palace-route-map-img:hover {
+  transform: scale(1.02);
+}
+
+.palace-route-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* Responsive adjustment for route layout */
+@media (max-width: 992px) {
+  .palace-route-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .palace-route-map-img {
+    max-height: 350px;
+  }
+}

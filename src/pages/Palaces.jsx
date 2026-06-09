@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Palaces.css';
 
 const palacesData = [
@@ -10,6 +10,7 @@ const palacesData = [
     detailDesc: '태조 4년(1395년)에 창건된 경복궁은 조선 왕조의 중심 법궁(정궁)입니다. 북악산 아래 자리 잡아 남쪽으로 광화문을 두고 축을 따라 근정전, 사정전, 강녕전 등이 배치되어 조선의 왕권과 기품을 고스란히 드러냅니다. 임진왜란 때 전소되었다가 고종 때 흥선대원군의 주도로 중건되었으며, 일제강점기 훼손의 아픔을 극복하고 지속적인 복원 사업을 통해 본래의 위엄을 되찾고 있습니다.',
     point: '추천 명소: 경회루, 향원정',
     image: '/palace_gyeongbokgung.jpg',
+    mapImage: '/map_gyeongbokgung.png',
     closed: '매주 화요일',
     admission: '대인(만25세~64세) 3,000원 / 만24세 이하, 만65세 이상 무료',
     hours: '09:00 - 18:00 (계절별로 마감 시간이 17:00~18:30으로 변동, 입장 마감은 1시간 전)',
@@ -35,6 +36,7 @@ const palacesData = [
     detailDesc: '태종 5년(1405년) 경복궁의 이궁(창건 이후 예비 궁궐)으로 건립된 창덕궁은, 조선 왕들이 경복궁보다 오랜 기간 동안 기거하며 실질적인 법궁 역할을 수행했습니다. 산자락의 자연 지형을 훼손하지 않고 조화롭게 건물을 배치한 전통 조경 예술의 극치를 보여주며, 유네스코 세계문화유산에 등재된 자랑스러운 유산입니다.',
     point: '추천 명소: 후원, 인정전',
     image: '/palace_changdeokgung.jpg',
+    mapImage: '/map_changdeokgung.png',
     closed: '매주 월요일',
     admission: '전각: 대인 3,000원 / 후원: 대인 5,000원 (후원은 별도 입장권 필요)',
     hours: '전각: 09:00 - 18:00 (계절별 변동) / 후원: 시간별 제한 관람 (사전 예약 필수)',
@@ -60,6 +62,7 @@ const palacesData = [
     detailDesc: '덕수궁은 조선 성종의 형인 월산대군의 사저에서 출발했습니다. 임진왜란 당시 도성의 궁궐이 모두 불타 선조의 임시 거처로 쓰이면서 궁궐로서의 지위를 얻었습니다. 1897년 고종 황제가 러시아 공사관에서 환궁(아관파천 후)하여 대한제국을 선포하면서 황제의 정궁이자 국가 중흥의 중심지가 되었습니다. 동서양 양식이 우아하게 녹아 있는 독특한 분위기가 감도는 궁궐입니다.',
     point: '추천 명소: 석조전, 덕수궁 돌담길',
     image: '/palace_deoksugung.jpg',
+    mapImage: '/map_deoksugung.png',
     closed: '매주 월요일',
     admission: '대인(만25세~64세) 1,000원 / 만24세 이하, 만65세 이상 무료',
     hours: '09:00 - 21:00 (입장 마감 20:00, 상시 야간 개방)',
@@ -84,6 +87,7 @@ const palacesData = [
     detailDesc: '성종 14년(1483년) 세 분의 대비(정희왕후, 소혜왕후, 안순왕후)의 편안한 노후 생활을 위해 건립된 창경궁은 효심이 깃든 궁궐입니다. 창덕궁과 나란히 위치하여 동궐이라는 이름 아래 밀접한 생활 공간을 공유해 왔다. 임진왜란과 화재, 그리고 일제강점기 시절 동물원(창경원)으로 강등되는 수모를 겪었으나 1983년 벚나무를 걷어내고 명칭 복원 및 대대적인 고증 복원을 완수해 냈습니다.',
     point: '추천 명소: 대온실, 춘당지',
     image: '/palace_changgyeonggung.jpg',
+    mapImage: '/map_changgyeonggung.png',
     closed: '매주 월요일',
     admission: '대인(만25세~64세) 1,000원 / 만24세 이하, 만65세 이상 무료',
     hours: '09:00 - 21:00 (입장 마감 20:00, 상시 야간 개방)',
@@ -109,6 +113,7 @@ const palacesData = [
     detailDesc: '광해군 10년(1623년) 건립된 경희궁은 인왕산 자락의 서쪽에 위치하여 동쪽의 창덕궁/창경궁에 대응하는 서궐(西闕)로 불렸습니다. 경사가 있는 자연 산세를 거스르지 않고 자연스러운 단차를 활용한 입체적 배치가 큰 아름다움이었으나, 일제강점기에 전각 대부분이 헐리고 경성중학교가 세워지는 등 5대 궁궐 중 가장 처참한 훼손을 겪었습니다. 이후 서울역사박물관 건립과 함께 일부 전각이 고증 복원되어 도심 속 숨겨진 조용한 쉼터 역할을 하고 있습니다.',
     point: '추천 명소: 숭정전, 서암',
     image: '/palace_gyeonghuigung.jpg',
+    mapImage: '/map_gyeonghuigung.png',
     closed: '매주 월요일',
     admission: '무료',
     hours: '09:00 - 18:00 (입장 마감 17:30)',
@@ -121,6 +126,30 @@ const palacesData = [
       { name: '서암', desc: '태령전 뒤편에 솟아오른 기이한 모양의 거대한 바위로, 바위 아래 샘물(암천)이 흘러나옵니다. 광해군이 이곳의 왕기에 이끌려 궁궐을 짓게 되었다는 전설을 품고 있습니다.' }
     ],
     tips: '경희궁은 5대 궁궐 중 유일하게 입장료가 전면 무료입니다. 관광객이 적고 매우 한적하여 복잡한 도심 속에서 호젓한 궁궐 산책이나 명상을 즐기기에 가장 완벽한 시크릿 가든입니다.'
+  },
+  {
+    id: 6,
+    name: '수원화성',
+    englishName: 'Suwon Hwaseong Fortress',
+    desc: '정조대왕의 개혁 의지와 효심이 깃든 성곽으로, 과학적인 설계와 수려한 아름다움이 조화되어 유네스코 세계문화유산에 등재되어 있습니다.',
+    detailDesc: '조선 22대 정조대왕이 부친 사도세자의 묘소를 수원 화산으로 옮기면서 1794년에 착공하여 1796년에 완공한 계획도시 성곽입니다. 정약용 등이 고안한 거중기와 유형거를 사용해 과학적이고 실용적으로 건축되었습니다. 단순한 군사 성벽을 넘어 주거와 상업이 결합된 조선 최초의 신도시이자 정조대왕의 원대한 개혁 정치를 실현하려던 역사적 현장입니다. 수려한 자연과 인공 시설물이 조화롭게 어우러져 성벽의 선이 자아내는 곡선미가 매우 뛰어납니다.',
+    point: '추천 명소: 방화수류정, 화성행궁, 서장대',
+    image: '/palace_suwon_hwaseong.jpg',
+    mapImage: '/map_suwon_hwaseong.png',
+    closed: '연중무휴 (화성행궁은 연중무휴)',
+    admission: '수원화성: 무료 / 화성행궁: 성인 1,500원, 청소년 1,000원, 어린이 700원',
+    hours: '수원화성: 상시 개방 / 화성행궁: 09:00 - 18:00 (입장 마감 17:30)',
+    special: '화성어차 탑승 체험 / 국궁(활쏘기) 체험 (연무대) / 화성행궁 야간개장 (매년 5월~10월 중순)',
+    route: [
+      { name: '화성행궁', desc: '정조대왕이 행차 시 머물던 임시 궐이자 어머니 혜경궁 홍씨의 회갑연이 성대하게 열린 곳으로, 조선 시대 행궁 중 가장 화려하고 격식 있는 규모를 보여줍니다.' },
+      { name: '팔달문', desc: '수원화성의 남쪽 정문이자 보물로, 성문 앞을 보호하기 위해 항아리 모양으로 단단히 둘러쌓은 옹성이 웅장한 방어 태세를 보여줍니다.' },
+      { name: '서장대', desc: '팔달산 정상에 위치한 지휘소로, 정조대왕이 군사 훈련을 직접 감독하고 호령하던 곳입니다. 탁 트인 조망으로 수원 시내가 한눈에 펼쳐집니다.' },
+      { name: '화서문', desc: '보물로 지정된 수원화성의 서쪽 대문으로, 성문 한쪽에 반달 모양 옹성을 열어둔 독특한 방어 구도가 돋보이는 수려한 디자인의 성문입니다.' },
+      { name: '장안문', desc: '수원화성의 북쪽 정문이자 왕이 드나들던 관문으로, 서울의 숭례문보다도 더 크고 웅장하게 설계되어 조선 성문 축조 기술의 극치를 보여줍니다.' },
+      { name: '화홍문 & 방화수류정', desc: '수원천 수문을 지키는 아름다운 화홍문과 그 위 절벽에 자리 잡아 연못(용연)을 굽어보는 방화수류정은 성벽 중에서도 가장 로맨틱하고 아름다운 풍경을 선사합니다.' },
+      { name: '연무대 (동장대)', desc: '군사들이 무예를 연마하고 조련받던 탁 트인 야외 광장으로, 현재는 전통 국궁(활쏘기)을 직접 체험해 볼 수 있는 장소입니다.' }
+    ],
+    tips: '성곽길 총 길이는 약 5.7km로 전체 도보 관람에는 약 2~3시간이 걸리며, 오르막길이 꽤 있어 "화성어차" 관광열차를 타보는 것을 권장합니다. 특히 밤이 되면 성곽 돌담을 따라 은은한 황금빛 야간 조명이 켜지므로 낙조 시간부터 야간 산책을 즐겨보세요.'
   }
 ];
 
@@ -159,8 +188,8 @@ const Palaces = () => {
   return (
     <section className="section palaces-page-bg">
       <div className="container">
-        <h2 className="section-title">우리나라 5대 궁궐</h2>
-        <p className="section-subtitle">조선 왕조의 숨결이 살아 숨 쉬는 고궁을 거닐어 보세요</p>
+        <h2 className="section-title">궁궐 & 수원화성</h2>
+        <p className="section-subtitle">조선 왕조의 숨결이 깃든 고궁과 수려한 수원화성을 거닐어 보세요</p>
 
         {/* Overview Grid */}
         <div className="palace-grid">
@@ -217,7 +246,7 @@ const Palaces = () => {
               </div>
               
               <div className="palace-detail-intro-box">
-                <h3 className="intro-title">궁궐 역사와 가치</h3>
+                <h3 className="intro-title">역사와 문화적 가치</h3>
                 <p className="intro-text">{selectedPalace.detailDesc}</p>
 
                 <div className="info-grid">
@@ -264,56 +293,66 @@ const Palaces = () => {
               </div>
             </div>
 
-            {/* Middle: Interactive Tour Route (관람순서도) */}
+            {/* Middle: Interactive Tour Route (관람코스) */}
             <div className="palace-tour-route-box">
               <h3 className="route-section-title">
-                🗺️ 추천 관람 순서도
-                <span className="route-subtitle">각 번호를 클릭해 주요 장소의 설명을 읽어보세요</span>
+                🗺️ 추천 관람 코스
+                <span className="route-subtitle">지도와 아래 번호를 클릭해 주요 장소의 설명을 읽어보세요</span>
               </h3>
 
-              {/* Scrollable Timeline Steps */}
-              <div className="route-timeline-container">
-                <div className="route-timeline-line"></div>
-                <div className="route-timeline-steps">
-                  {selectedPalace.route.map((step, idx) => (
-                    <div 
-                      key={idx} 
-                      className={`route-timeline-node-wrapper ${idx === activeStepIndex ? 'active' : ''}`}
-                      onClick={() => setActiveStepIndex(idx)}
-                    >
-                      <div className="route-timeline-node">
-                        {idx + 1}
-                      </div>
-                      <span className="route-timeline-label">{step.name}</span>
-                    </div>
-                  ))}
+              <div className="palace-route-layout">
+                {/* Left: Map Image from Royal KHS */}
+                <div className="palace-route-map-box">
+                  <img src={selectedPalace.mapImage} alt={`${selectedPalace.name} 관람 코스 지도`} className="palace-route-map-img" />
                 </div>
-              </div>
 
-              {/* Route Spot Detail Panel */}
-              <div className="route-spot-detail-card">
-                <div className="spot-header">
-                  <div className="spot-number">Step {activeStepIndex + 1}</div>
-                  <h4 className="spot-title">{selectedPalace.route[activeStepIndex].name}</h4>
-                </div>
-                <p className="spot-desc">{selectedPalace.route[activeStepIndex].desc}</p>
-                
-                <div className="spot-navigator">
-                  <button 
-                    className="spot-nav-btn" 
-                    onClick={handlePrevStep}
-                    disabled={activeStepIndex === 0}
-                  >
-                    이전 장소
-                  </button>
-                  <span className="spot-progress">{activeStepIndex + 1} / {selectedPalace.route.length}</span>
-                  <button 
-                    className="spot-nav-btn" 
-                    onClick={handleNextStep}
-                    disabled={activeStepIndex === selectedPalace.route.length - 1}
-                  >
-                    다음 장소
-                  </button>
+                {/* Right: Steps Timeline & Detail Panel */}
+                <div className="palace-route-info-box">
+                  {/* Scrollable Timeline Steps */}
+                  <div className="route-timeline-container">
+                    <div className="route-timeline-line"></div>
+                    <div className="route-timeline-steps">
+                      {selectedPalace.route.map((step, idx) => (
+                        <div 
+                          key={idx} 
+                          className={`route-timeline-node-wrapper ${idx === activeStepIndex ? 'active' : ''}`}
+                          onClick={() => setActiveStepIndex(idx)}
+                        >
+                          <div className="route-timeline-node">
+                            {idx + 1}
+                          </div>
+                          <span className="route-timeline-label">{step.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Route Spot Detail Panel */}
+                  <div className="route-spot-detail-card">
+                    <div className="spot-header">
+                      <div className="spot-number">Step {activeStepIndex + 1}</div>
+                      <h4 className="spot-title">{selectedPalace.route[activeStepIndex].name}</h4>
+                    </div>
+                    <p className="spot-desc">{selectedPalace.route[activeStepIndex].desc}</p>
+                    
+                    <div className="spot-navigator">
+                      <button 
+                        className="spot-nav-btn" 
+                        onClick={handlePrevStep}
+                        disabled={activeStepIndex === 0}
+                      >
+                        이전 장소
+                      </button>
+                      <span className="spot-progress">{activeStepIndex + 1} / {selectedPalace.route.length}</span>
+                      <button 
+                        className="spot-nav-btn" 
+                        onClick={handleNextStep}
+                        disabled={activeStepIndex === selectedPalace.route.length - 1}
+                      >
+                        다음 장소
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
