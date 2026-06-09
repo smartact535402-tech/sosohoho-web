@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sosohoho.kr/sitemap.xml
+Sitemap: https://sosohoho.today/sitemap.xml
